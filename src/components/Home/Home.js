@@ -40,7 +40,10 @@ function Home() {
       </AppBar>
       <Grid container spacing={3} className={classes.homeGrid}>
         <Grid item xs={6} className={classes.homeGridBody}>
-          <Paper className={classes.paper}>xs=6</Paper>
+          <Paper className={classes.paper}>
+            <h1>Corona</h1>
+            <h2>Virus Disease (COVID-19)</h2>
+          </Paper>
         </Grid>
         <Grid item xs={6} className={classes.homeGridBody}>
           <Paper className={classes.paper}>xs=6</Paper>
