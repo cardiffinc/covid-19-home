@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: 'left',
     color: '#fff',
-    height: 'inherit',
+    height: '-webkit-fill-available',
     background: 'none'
   },
   homeGrid:{
@@ -38,11 +38,15 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 25,
     textTransform: 'initial',
     fontWeight: 'bold',
+  },
+  infoGrid:{
+    
   }
 }));
 
 function Home() {
   const classes = useStyles();
+  const twelve = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ]
   return (
     <div>
       <AppBar position="static" className={classes.appBar}>
@@ -66,6 +70,47 @@ function Home() {
         <Grid item xs={6} className={classes.homeGridBody}>
           <Paper className={classes.paper}>xs=6</Paper>
         </Grid>
+      </Grid>
+      <Grid>
+        <h4>Prevention</h4>
+          <Grid item xs={12} className={classes.infoGrid}>
+              <Grid 
+                container 
+                spacing={2}
+                direction="row"
+                justify="space-between">
+                    <Grid item xs={1}> 
+                        <Paper>xs=2</Paper>
+                    </Grid>
+                    <Grid item xs={1}> 
+                        <Paper>xs=2</Paper>
+                    </Grid>
+                    <Grid item xs={1}> 
+                        <Paper>xs=2</Paper>
+                    </Grid>
+                    <Grid item xs={1}> 
+                        <Paper>xs=2</Paper>
+                    </Grid>
+                    <Grid item xs={1}> 
+                        <Paper>xs=2</Paper>
+                    </Grid>
+                    <Grid item xs={1}> 
+                        <Paper>xs=2</Paper>
+                    </Grid>
+                    <Grid item xs={1}> 
+                        <Paper>xs=2</Paper>
+                    </Grid>
+                    <Grid item xs={1}> 
+                        <Paper>xs=2</Paper>
+                    </Grid>
+                    <Grid item xs={1}> 
+                        <Paper>xs=2</Paper>
+                    </Grid>
+                    <Grid item xs={1}> 
+                        <Paper>xs=2</Paper>
+                    </Grid>
+              </Grid>
+          </Grid>
       </Grid>
     </div>
   )
