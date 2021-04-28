@@ -7,6 +7,10 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
+  appBar:{
+    boxShadow: 'none',
+    background: '#2437C4'
+  },
   menuButton: {
     marginRight: theme.spacing(2),
   },
@@ -15,15 +19,25 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-    height: 'inherit'
+    textAlign: 'left',
+    color: '#fff',
+    height: 'inherit',
+    background: 'none'
   },
   homeGrid:{
     height: '60vh'
   },
   homeGridBody: {
     height: 'inherit'
+  },
+  mainButton:{
+    background: '#fff',
+    color: '#000',
+    borderRadius: 25,
+    paddingLeft: 25,
+    paddingRight: 25,
+    textTransform: 'initial',
+    fontWeight: 'bold',
   }
 }));
 
@@ -31,7 +45,7 @@ function Home() {
   const classes = useStyles();
   return (
     <div>
-      <AppBar position="static">
+      <AppBar position="static" className={classes.appBar}>
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
@@ -43,6 +57,10 @@ function Home() {
           <Paper className={classes.paper}>
             <h1>Corona</h1>
             <h2>Virus Disease (COVID-19)</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu volutpat quam. Nunc vitae mollis libero. Sed vitae blandit massa. Suspendisse fermentum libero non neque viverra consectetur. Fusce justo tellus, ullamcorper et hendrerit in, semper et quam. Sed commodo arcu a viverra volutpat. Maecenas ultrices semper sollicitudin. Maecenas tempus fermentum quam dictum tempor. Sed blandit orci imperdiet mauris euismod, ac vulputate nulla efficitur. Vestibulum accumsan nisi ipsum, id pretium erat hendrerit vitae. Donec a augue erat. Proin orci nunc, vestibulum eu justo vel, accumsan aliquam felis.
+            </p>
+            <Button className={classes.mainButton}>Read More</Button>
           </Paper>
         </Grid>
         <Grid item xs={6} className={classes.homeGridBody}>
