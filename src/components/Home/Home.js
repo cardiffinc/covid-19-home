@@ -36,6 +36,16 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '3em!important',
     fontSize: 12
   },
+  lottieHolder:{
+    marginTop: '4em!important'
+  },
+  templateInfoTitle: {
+    fontSize: 'small',
+    color: '#fff',
+    textTransform: 'uppercase',
+    width: 'fit-content',
+    marginLeft: 10,
+  },
   paper: {
     padding: theme.spacing(2),
     textAlign: 'left',
@@ -104,10 +114,12 @@ function Home() {
             </div>
         </Grid>
         <Grid item xs={6} className={classes.homeGridBody}>
-          <Lottie 
-            options={defaultLottieConfig}
-            height={400}
-            width={600}/>
+          <div className={classes.lottieHolder}>
+            <Lottie 
+              options={defaultLottieConfig}
+              height={400}
+              width={600}/>
+          </div>
         </Grid>
       </Grid>
       <Grid>
@@ -121,7 +133,7 @@ function Home() {
                         
                     </Grid>
                     <Grid item xs={6}> 
-                      <h4>Prevention</h4>
+                      <h4 className={classes.templateInfoTitle}>Prevention</h4>
                       <SingleLineGrid/>
                     </Grid>
               </Grid>
