@@ -1,8 +1,10 @@
-import { AppBar, Button, Grid, makeStyles, Toolbar } from '@material-ui/core'
-import React from 'react'
+import { AppBar, Button, Grid, makeStyles, Toolbar } from '@material-ui/core';
+import React from 'react';
 import Lottie from 'react-lottie';
 import SingleLineGrid from '../SingleLineGrid/SingleLineGrid';
-import CovidAnimation from '../../lottie/CovidAnimations.json'
+import CovidAnimation from '../../lottie/CovidAnimations.json';
+import './styles.css'
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -127,7 +129,9 @@ function Home() {
               </Grid>
           </Grid>
       </Grid>
-      
+      <div className='homeFooter'>
+                UI inspired from <a href="https://dribbble.com/shots/10752946-Corona-Virus-Disease-COVID-19" target="_blank" rel="noreferrer">Sahil Bajaj</a>. React Template by <a href="https://github.com/cardiffinc" target="_blank" rel="noreferrer">sjoshuadarth</a>. 
+      </div>
    </div>
   )
 }

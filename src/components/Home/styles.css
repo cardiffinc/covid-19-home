@@ -1,0 +1,10 @@
+.homeFooter{
+    color: #fff;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+.homeFooter a{
+    color: #fff;
+}
