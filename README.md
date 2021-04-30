@@ -8,6 +8,9 @@ This project was inspired from the [ui-mockup](https://dribbble.com/shots/107529
 - Material UI React
 - Lottie for animations
 
+## Animations
+All the Animations belong to the awesome creators at [Lottie](https://lottiefiles.com/).
+
 ## Demo
 - the frontend and a simple auth setup is deployed as a [demo](https://sjoshuadarth-covid-19.netlify.app). 
 
