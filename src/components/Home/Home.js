@@ -81,6 +81,10 @@ function Home() {
     }
   };
 
+  const handleButtonClick = () => {
+    window.open('https://en.wikipedia.org/wiki/COVID-19', '_blank')
+  }
+
   return (
     <div>
       <AppBar position="static" className={classes.appBar}>
@@ -94,7 +98,7 @@ function Home() {
               <p className={classes.templateParagraph}>
               Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.<br/>
               Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment.              </p>
-              <Button className={classes.mainButton}>Read More</Button>
+              <Button className={classes.mainButton} onClick={handleButtonClick}>Read More</Button>
             </div>
         </Grid>
         <Grid item xs={6} className={classes.homeGridBody}>
