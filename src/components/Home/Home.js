@@ -1,6 +1,4 @@
-import { AppBar, Button, Grid, IconButton, makeStyles, Paper, Toolbar, Typography } from '@material-ui/core'
-import MenuIcon from '@material-ui/icons/Menu';
-
+import { AppBar, Button, Grid, makeStyles, Toolbar } from '@material-ui/core'
 import React from 'react'
 import Lottie from 'react-lottie';
 import SingleLineGrid from '../SingleLineGrid/SingleLineGrid';
@@ -46,13 +44,6 @@ const useStyles = makeStyles((theme) => ({
     width: 'fit-content',
     marginLeft: 10,
   },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'left',
-    color: '#fff',
-    height: '-webkit-fill-available',
-    background: 'none'
-  },
   homeGrid:{
     height: '60vh'
   },
@@ -72,9 +63,6 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 25,
     textTransform: 'initial',
     fontWeight: 'bold',
-  },
-  infoGrid:{
-    
   },
   squareInfo:{
     height: 125,
@@ -96,11 +84,7 @@ function Home() {
   return (
     <div>
       <AppBar position="static" className={classes.appBar}>
-        <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
-        </Toolbar>
+        <Toolbar/>
       </AppBar>
       <Grid container spacing={3} className={classes.homeGrid}>
         <Grid item xs={6} className={classes.homeGridBody}>
@@ -108,8 +92,8 @@ function Home() {
               <h1 className={classes.templateHeading}>Corona</h1>
               <h2 className={classes.templateSubTitle}>Virus Disease (COVID-19)</h2>
               <p className={classes.templateParagraph}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu volutpat quam. Nunc vitae mollis libero. Sed vitae blandit massa. Suspendisse fermentum libero non neque viverra consectetur. Fusce justo tellus, ullamcorper et hendrerit in, semper et quam. Sed commodo arcu a viverra volutpat. Maecenas ultrices semper sollicitudin. Maecenas tempus fermentum quam dictum tempor. Sed blandit orci imperdiet mauris euismod, ac vulputate nulla efficitur. Vestibulum accumsan nisi ipsum, id pretium erat hendrerit vitae. Donec a augue erat. Proin orci nunc, vestibulum eu justo vel, accumsan aliquam felis.
-              </p>
+              Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.<br/>
+              Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment.              </p>
               <Button className={classes.mainButton}>Read More</Button>
             </div>
         </Grid>

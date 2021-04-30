@@ -2,11 +2,9 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
-import GridListTileBar from '@material-ui/core/GridListTileBar';
-import IconButton from '@material-ui/core/IconButton';
-import StarBorderIcon from '@material-ui/icons/StarBorder';
 import tileData from './tileData';
-import placeholder from './placeholder.png'
+import Lottie from 'react-lottie';
+import { Tooltip } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,15 +35,27 @@ const useStyles = makeStyles((theme) => ({
 
 function SingleLineGrid() {
   const classes = useStyles();
-
+  const defaultLottieConfig = {
+    loop: true,
+    autoplay: true,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
   return (
     <div className={classes.root}>
-      <GridList className={classes.gridList} cols={8}>
-        {tileData.map((tile) => (
+      <GridList className={classes.gridList} cols={4}>
+        {tileData.map((tile, pos) => (
           <>
-            <GridListTile key={tile.img} className={classes.squareTile}>
-              <img src={placeholder} alt={tile.title} />
+            <Tooltip title={tile.title}>
+            <GridListTile key={pos} className={classes.squareTile}>
+              <Lottie 
+                options={{...defaultLottieConfig, animationData: tile.lottie}}
+                height={100}
+                width={100}/>
+              
             </GridListTile>
+            </Tooltip>
           </>
         ))}
       </GridList>

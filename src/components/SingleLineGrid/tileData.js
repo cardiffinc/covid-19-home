@@ -1,69 +1,51 @@
+import HandWash from '../../lottie/HandWash.json';
+import MaskUp from '../../lottie/MaskUp.json';
+import HandShake from '../../lottie/HandShake.json';
+import SocialDistance from '../../lottie/SocialDistance.json';
+import Vaccinate from '../../lottie/Vaccinate.json';
+
+
 const tileData = [
     {
-      img: '/static/images/grid-list/breakfast.jpg',
-      title: 'Breakfast',
-      author: 'jill111',
-      cols: 2,
-      featured: true,
+      lottie: HandWash,
+      title: 'Handwash',
     },
     {
-      img: '/static/images/grid-list/burgers.jpg',
-      title: 'Tasty burger',
-      author: 'director90',
+      lottie: MaskUp,
+      title: 'Mask Up',
     },
     {
-      img: '/static/images/grid-list/camera.jpg',
-      title: 'Camera',
-      author: 'Danson67',
+      lottie: HandShake,
+      title: 'Handshake',
     },
     {
-      img: '/static/images/grid-list/morning.jpg',
-      title: 'Morning',
-      author: 'fancycrave1',
-      featured: true,
+      lottie: SocialDistance,
+      title: 'SocialDistance',
     },
     {
-      img: '/static/images/grid-list/hats.jpg',
-      title: 'Hats',
-      author: 'Hans',
+      lottie: Vaccinate,
+      title: 'Get Vaccinated',
     },
     {
-      img: '/static/images/grid-list/honey.jpg',
-      title: 'Honey',
-      author: 'fancycravel',
+      lottie: HandWash,
+      title: 'Handwash',
     },
     {
-      img: '/static/images/grid-list/vegetables.jpg',
-      title: 'Vegetables',
-      author: 'jill111',
-      cols: 2,
+      lottie: MaskUp,
+      title: 'Mask Up',
     },
     {
-      img: '/static/images/grid-list/plant.jpg',
-      title: 'Water plant',
-      author: 'BkrmadtyaKarki',
+      lottie: HandShake,
+      title: 'Handshake',
     },
     {
-      img: '/static/images/grid-list/mushroom.jpg',
-      title: 'Mushrooms',
-      author: 'PublicDomainPictures',
+      lottie: SocialDistance,
+      title: 'SocialDistance',
     },
     {
-      img: '/static/images/grid-list/olive.jpg',
-      title: 'Olive oil',
-      author: 'congerdesign',
-    },
-    {
-      img: '/static/images/grid-list/star.jpg',
-      title: 'Sea star',
-      cols: 2,
-      author: '821292',
-    },
-    {
-      img: '/static/images/grid-list/bike.jpg',
-      title: 'Bike',
-      author: 'danfador',
-    },
+      lottie: Vaccinate,
+      title: 'Get Vaccinated',
+    }
   ];
   
   export default tileData;
